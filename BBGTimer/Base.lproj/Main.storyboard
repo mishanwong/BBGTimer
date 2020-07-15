@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3qH-ES-nRW">
-                                <rect key="frame" x="64.5" y="618" width="285" height="158"/>
+                                <rect key="frame" x="64.5" y="558" width="285" height="247"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcM-Ke-j8B">
                                         <rect key="frame" x="0.0" y="0.0" width="285" height="69"/>
@@ -26,8 +26,18 @@
                                             <action selector="startTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v6N-YW-gdU"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1a-IH-bpy">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlG-bV-RRP">
                                         <rect key="frame" x="0.0" y="89" width="285" height="69"/>
+                                        <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
+                                        <state key="normal" title="Pause" backgroundImage="orange">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pauseTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lxg-XP-nBx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1a-IH-bpy">
+                                        <rect key="frame" x="0.0" y="178" width="285" height="69"/>
                                         <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
                                         <state key="normal" title="Reset" backgroundImage="red">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -39,26 +49,26 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evc-Ce-rNo">
-                                <rect key="frame" x="75.5" y="378" width="263" height="140"/>
+                                <rect key="frame" x="75.5" y="348" width="263" height="140"/>
                                 <fontDescription key="fontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vec-h4-inU">
-                                <rect key="frame" x="114.5" y="208" width="185.5" height="70"/>
+                                <rect key="frame" x="114.5" y="144" width="185.5" height="70"/>
                                 <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.92989572926763209" green="0.98999992829531103" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="3qH-ES-nRW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0zu-JH-2X1"/>
                             <constraint firstItem="vec-h4-inU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HVj-hm-KQf"/>
                             <constraint firstItem="evc-Ce-rNo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JgX-XW-06e"/>
-                            <constraint firstItem="evc-Ce-rNo" firstAttribute="top" secondItem="vec-h4-inU" secondAttribute="bottom" constant="100" id="Yai-de-eKz"/>
-                            <constraint firstItem="evc-Ce-rNo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ebu-4q-m2o"/>
-                            <constraint firstItem="3qH-ES-nRW" firstAttribute="top" secondItem="evc-Ce-rNo" secondAttribute="bottom" constant="100" id="wVs-Nk-JtT"/>
+                            <constraint firstItem="vec-h4-inU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="dNF-uI-DGO"/>
+                            <constraint firstItem="evc-Ce-rNo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="ebu-4q-m2o"/>
+                            <constraint firstItem="3qH-ES-nRW" firstAttribute="top" secondItem="evc-Ce-rNo" secondAttribute="bottom" constant="70" id="wVs-Nk-JtT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -76,6 +86,7 @@
     </scenes>
     <resources>
         <image name="green" width="285" height="69"/>
+        <image name="orange" width="130" height="69"/>
         <image name="red" width="285" height="69"/>
     </resources>
 </document>

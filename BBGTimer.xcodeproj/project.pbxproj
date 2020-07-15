@@ -13,6 +13,14 @@
 		E46595DA24B515DE0013A67B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46595D824B515DE0013A67B /* Main.storyboard */; };
 		E46595DC24B515E00013A67B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46595DB24B515E00013A67B /* Assets.xcassets */; };
 		E46595DF24B515E00013A67B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46595DD24B515E00013A67B /* LaunchScreen.storyboard */; };
+		E4D0880824BE26FB00727E56 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D0880724BE26FB00727E56 /* SoundManager.swift */; };
+		E4D0881C24BE6FF600727E56 /* complete.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E4D0881624BE6FF600727E56 /* complete.m4a */; };
+		E4D0881D24BE6FF600727E56 /* round2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E4D0881724BE6FF600727E56 /* round2.m4a */; };
+		E4D0881E24BE6FF600727E56 /* round1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E4D0881824BE6FF600727E56 /* round1.m4a */; };
+		E4D0881F24BE6FF600727E56 /* round3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E4D0881924BE6FF600727E56 /* round3.m4a */; };
+		E4D0882024BE6FF600727E56 /* start.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E4D0881A24BE6FF600727E56 /* start.m4a */; };
+		E4D0882124BE6FF600727E56 /* round4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E4D0881B24BE6FF600727E56 /* round4.m4a */; };
+		E4D0882324BE703200727E56 /* break.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E4D0882224BE703200727E56 /* break.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		E46595DB24B515E00013A67B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E46595DE24B515E00013A67B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E46595E024B515E00013A67B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4D0880724BE26FB00727E56 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		E4D0881624BE6FF600727E56 /* complete.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = complete.m4a; sourceTree = "<group>"; };
+		E4D0881724BE6FF600727E56 /* round2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = round2.m4a; sourceTree = "<group>"; };
+		E4D0881824BE6FF600727E56 /* round1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = round1.m4a; sourceTree = "<group>"; };
+		E4D0881924BE6FF600727E56 /* round3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = round3.m4a; sourceTree = "<group>"; };
+		E4D0881A24BE6FF600727E56 /* start.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = start.m4a; sourceTree = "<group>"; };
+		E4D0881B24BE6FF600727E56 /* round4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = round4.m4a; sourceTree = "<group>"; };
+		E4D0882224BE703200727E56 /* break.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = break.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,31 @@
 		E46595D124B515DE0013A67B /* BBGTimer */ = {
 			isa = PBXGroup;
 			children = (
+				E4D0880924BE424E00727E56 /* Sounds */,
 				E46595D224B515DE0013A67B /* AppDelegate.swift */,
 				E46595D424B515DE0013A67B /* SceneDelegate.swift */,
 				E46595D624B515DE0013A67B /* ViewController.swift */,
+				E4D0880724BE26FB00727E56 /* SoundManager.swift */,
 				E46595D824B515DE0013A67B /* Main.storyboard */,
 				E46595DB24B515E00013A67B /* Assets.xcassets */,
 				E46595DD24B515E00013A67B /* LaunchScreen.storyboard */,
 				E46595E024B515E00013A67B /* Info.plist */,
 			);
 			path = BBGTimer;
+			sourceTree = "<group>";
+		};
+		E4D0880924BE424E00727E56 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E4D0882224BE703200727E56 /* break.m4a */,
+				E4D0881624BE6FF600727E56 /* complete.m4a */,
+				E4D0881824BE6FF600727E56 /* round1.m4a */,
+				E4D0881724BE6FF600727E56 /* round2.m4a */,
+				E4D0881924BE6FF600727E56 /* round3.m4a */,
+				E4D0881B24BE6FF600727E56 /* round4.m4a */,
+				E4D0881A24BE6FF600727E56 /* start.m4a */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +157,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4D0881D24BE6FF600727E56 /* round2.m4a in Resources */,
+				E4D0881E24BE6FF600727E56 /* round1.m4a in Resources */,
+				E4D0882324BE703200727E56 /* break.m4a in Resources */,
 				E46595DF24B515E00013A67B /* LaunchScreen.storyboard in Resources */,
+				E4D0881C24BE6FF600727E56 /* complete.m4a in Resources */,
+				E4D0882124BE6FF600727E56 /* round4.m4a in Resources */,
 				E46595DC24B515E00013A67B /* Assets.xcassets in Resources */,
 				E46595DA24B515DE0013A67B /* Main.storyboard in Resources */,
+				E4D0881F24BE6FF600727E56 /* round3.m4a in Resources */,
+				E4D0882024BE6FF600727E56 /* start.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E46595D724B515DE0013A67B /* ViewController.swift in Sources */,
+				E4D0880824BE26FB00727E56 /* SoundManager.swift in Sources */,
 				E46595D324B515DE0013A67B /* AppDelegate.swift in Sources */,
 				E46595D524B515DE0013A67B /* SceneDelegate.swift in Sources */,
 			);
@@ -291,6 +331,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mishanwong.BBGTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -309,6 +350,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mishanwong.BBGTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

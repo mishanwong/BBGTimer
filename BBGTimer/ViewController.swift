@@ -9,9 +9,9 @@ import UIKit
 import Foundation
 
 class ViewController: UIViewController {
-    var startingTime: Int = 1800
     var ourTimer = Timer()
-    var timeRemaining:Int = 1800 //same as startingTime
+    var timeRemaining:Int = 1800
+    var sound = SoundManager()
     
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
@@ -98,16 +98,40 @@ class ViewController: UIViewController {
 
         }
         
+        //Sound effects
+        if timeRemaining == 1799 { sound.playSound(effect: .round1) }
+        if timeRemaining == 1350 { sound.playSound(effect: .round2) }
+        if timeRemaining == 900 { sound.playSound(effect: .round3) }
+        if timeRemaining == 480 { sound.playSound(effect: .round4) }
+        if timeRemaining == 1380 || timeRemaining == 930 || timeRemaining == 480 || timeRemaining == 30 { sound.playSound(effect: .takeBreak) }
+        if timeRemaining == 0 { sound.playSound(effect: .complete) }
+    
+    
     }
-
-    @IBAction func startTapped(_ sender: Any) {
-        ourTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
-        }
         
+    @IBAction func startTapped(_ sender: Any) {
+        
+        //Prevent screen from going to sleep when timer is running
+        UIApplication.shared.isIdleTimerDisabled = true
+        
+        ourTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
+        
+        }
+    
+    
+    @IBAction func pauseTapped(_ sender: Any) {
+        ourTimer.invalidate()
+        UIApplication.shared.isIdleTimerDisabled = false
+
+        
+    }
+    
     @IBAction func stopTapped(_ sender: Any) {
         timeRemaining = 1800
         timerLabel.text = String("07:00")
         roundCounter.text = String("Round 1")
         ourTimer.invalidate()
+        UIApplication.shared.isIdleTimerDisabled = false
+        
     }
 }

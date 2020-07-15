@@ -21,7 +21,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcM-Ke-j8B">
                                         <rect key="frame" x="0.0" y="0.0" width="287" height="71"/>
                                         <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
-                                        <state key="normal" title="Start" backgroundImage="green1"/>
+                                        <state key="normal" title="Start" backgroundImage="green1">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="startTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v6N-YW-gdU"/>
                                         </connections>
@@ -63,11 +65,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Mishan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMe-lK-6Pg">
                                 <rect key="frame" x="141" y="851" width="132" height="21"/>
                                 <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="15"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="3qH-ES-nRW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0zu-JH-2X1"/>
                             <constraint firstItem="KMe-lK-6Pg" firstAttribute="top" secondItem="3qH-ES-nRW" secondAttribute="bottom" constant="40" id="2YD-yc-O4b"/>

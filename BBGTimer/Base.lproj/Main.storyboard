@@ -70,13 +70,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3qH-ES-nRW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0zu-JH-2X1"/>
+                            <constraint firstItem="KMe-lK-6Pg" firstAttribute="top" secondItem="3qH-ES-nRW" secondAttribute="bottom" constant="40" id="2YD-yc-O4b"/>
                             <constraint firstItem="KMe-lK-6Pg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8uQ-az-VeE"/>
                             <constraint firstItem="vec-h4-inU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HVj-hm-KQf"/>
                             <constraint firstItem="evc-Ce-rNo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JgX-XW-06e"/>
                             <constraint firstItem="vec-h4-inU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="dNF-uI-DGO"/>
                             <constraint firstItem="evc-Ce-rNo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="ebu-4q-m2o"/>
                             <constraint firstItem="KMe-lK-6Pg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="10" id="qmc-4U-K8R"/>
-                            <constraint firstItem="3qH-ES-nRW" firstAttribute="top" secondItem="evc-Ce-rNo" secondAttribute="bottom" constant="70" id="wVs-Nk-JtT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
